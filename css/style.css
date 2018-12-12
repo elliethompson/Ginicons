@@ -1,0 +1,596 @@
+/* ------ CSS RESET ------ */
+ 
+* {
+    padding:0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1.5em;}
+
+/* ------ BODY -------*/
+
+body { 
+    width: 100%;
+    font-family: 'Mali', sans-serif;
+    font-weight: 400,500,600;
+    font-style: normal;
+    margin: auto;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+/*----------HEADERS & PHARAGRAPHS-----------*/
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2em;
+    color:#2A4882;
+    display: inline-block;
+    height:px;
+    box-shadow: 0 25px 0 -22px #DE3E6E;
+}
+
+h2 {
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    color:#DE3E6E;
+    text-align: center;
+    height: 50px;
+    box-shadow: 0 23px 0 -22px #DE3E6E;
+    
+}
+    
+h3 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2em;
+    color:white;
+    padding-top: 3em;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Karla', sans-serif;
+    font-size: 3em;
+    color:#2A4882;
+    padding-top: 1em;
+    display: inline-block;
+    box-shadow: 0 25px 0 -24px white;
+}
+
+h5 {
+    font-family: 'Karla', sans-serif;
+     font-size: 1.2em;
+    color:#DE3E6E;
+    padding-top: 1em;
+    padding-bottom: 1.3em;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+}
+
+.howtotext {
+    padding: 3em;
+    text-align: center;
+    }
+.howtotext:nth-child(3) {
+    padding: 3em;
+    text-align: justify;
+    }
+
+.about {
+    padding: 0em;
+    text-align: justify;
+    }
+
+.grid-download p {
+    padding-top: 2em;
+    }
+
+.grid-howto p {
+    padding-top: 2em;
+    }
+
+.arrow p {
+    color: white;
+}
+
+/*----------IMG-----------*/
+
+.grid-container img {
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+        transition:         transform .4s ease-in-out;
+}
+
+.grid-container img:hover {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%  25%;/*Make the grid smaller than the container*/
+    grid-gap: 0px;
+    padding: 0px;
+}
+
+.grid-container > div {
+  align-content: center;
+  
+}
+
+.gunpowder{
+    padding-top:2.65em;
+}
+
+.tanqueray {
+       padding-top:1.6em;
+}
+
+.malfy {
+padding-top:2.65em;
+}
+
+.bulldog{
+    padding-top:1.5em;
+}
+
+.hapenny {
+       padding-top:1.3em;
+}
+
+.copeland {
+padding-top:2.75em;
+}
+
+.hendricks{
+    padding-top:1.25em;
+}
+
+.bombay{
+       padding-top:0.1em;
+}
+
+.eg{
+padding-top:0.3em;
+}
+
+.jawbox {
+    padding-top:1.3em;
+}
+
+.hortus {
+       padding-top:1.5em;
+}
+
+.boodles {
+padding-top:1.3em;
+}
+
+.second-shelf {
+    padding-top: 4em;
+}
+
+.grid-container img {
+    width: 100%;
+}
+
+.grid-download {
+    text-align: center;
+    margin: 15em 0em 0em 0em;}
+
+.grid-howto {
+    margin: 5em 0em 0em 0em;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;/*Make the grid smaller than the container*/
+    }
+
+.two-grid {
+   
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;/*Make the grid smaller than the container*/
+    grid-gap: 30px;
+    padding-left:5em;
+    padding-right:5em;
+}
+
+.two-grid> div {
+    align-items: center;
+}
+
+.two-grid img {
+    align-content: center;
+    max-width: 400px;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;}
+    width: 100%;
+    padding: 3em;}
+
+.arrow a { 
+    color: white; text-decoration: none; 
+}
+
+.arrow {
+    padding-top: 4em;
+  text-align: center;
+  margin: 8% 0;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*----------BUTTON-----------*/
+
+.buttons {
+    margin:1em 9em;
+    display: flex;
+    align-items: center;
+    }
+
+section button {
+    margin: 2em 3em;
+    font-size: 1em;
+    padding: 0.7em 6em;
+    background-color: transparent;
+    border: 1.5px solid #2A4882;
+    color: #2A4882;
+    font-weight: 300;
+    -webkit-border-radius: 50px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+section button:hover {
+  background-color: #2A4882;
+  border: 1.5px solid #2A4882;
+    color: white
+}
+
+a {
+    text-decoration:none;
+}
+
+/*----------NAVIGATION-----------*/
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav.white {
+    background: rgba(255, 255, 255, 0.8);
+    height: 3em;
+}
+
+nav ul {
+    list-style:none;
+    float: right;
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    font-size: 0.8em;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #2A4882;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 5px;
+    margin: 10px;}
+
+nav.black ul li a {
+    color: #2A4882;
+}
+
+/*----------FOOTER-----------*/
+
+.banner{
+    width: 100%;
+    height: 400px;
+     background-image: url("../images/footer.png");
+    background-size:100% 100%;
+    
+}
+
+.social {
+    text-align: center;
+    color: white;
+    padding: 8em 2em 1em 0em;}
+
+.social h3 {
+    padding-bottom: 0.5em;}
+
+.social p:nth-child(3) {
+    padding-top: 1.5em;
+    font-size: 0.7em;}
+    
+.social a {
+    text-decoration: underline;
+    color: #DE3E6E;}
+
+.social span{
+    color: #DE3E6E;
+}
+
+
+
+
+/* ------ MEDIA QUERIES -------*/
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px)
+{    
+ body {
+   background-image: url("../images/mobile.png");
+      background-size:;
+      background-repeat: no-repeat;
+      width: 100%;
+     height: 100%; }
+    
+h3 {
+    font-size: 2em;
+    padding: 2.5em 1em 1em 1em;
+}
+    
+    
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 10% 15% 15% 15% 15% 15% 15%  10%;/*Make the grid smaller than the container*/
+    grid-gap: 0px;
+    padding: 0px;
+}
+
+.grid-download {
+    margin: 15em 0em 0em 0em;
+    }
+    
+.two-grid {
+    display: grid;
+    grid-template-columns: 100%; /*Make the grid smaller than the container*/
+    grid-gap: 30px;
+    padding-left:1em;
+    padding-right:1em;
+}
+    
+    .two-grid img {
+        display: block;
+        margin: 0 auto;}
+    
+.buttons{
+    align-items: center;
+    margin:1em 0em;
+    display: flex;
+    align-items: center;
+    }
+    
+section button {
+    margin: 2em 0.8em;
+    padding: 0.7em 6em;
+}
+    
+.two-grid img {
+    padding: 0em;
+    }
+    
+.banner{
+     background-image: url("../images/footer.png");
+    background-size:;
+      background-repeat: no-repeat;
+      width: 100%;
+     height: 100%;
+}
+    
+.gunpowder{
+    padding-top:7.15em;
+}
+
+.tanqueray {
+       padding-top:6em;
+}
+
+.malfy {
+padding-top:7.15em;
+}
+
+.bulldog{
+    padding-top:6em;
+}
+
+.hapenny {
+       padding-top:5.7em;
+}
+
+.copeland {
+padding-top:7.3em;
+}
+
+.hendricks{
+    padding-top:5.2em;
+}
+
+.bombay{
+       padding-top:4em;
+}
+
+.eg{
+padding-top:4.2em;
+}
+
+.jawbox {
+    padding-top:5.3em;
+}
+
+.hortus {
+       padding-top:5.5em;
+}
+
+.boodles {
+padding-top:5.2em;
+}
+    
+.arrow {
+    padding-top: 15em;
+}
+    
+.banner{
+    width: 100%;
+    height: 350px;
+    background-size:auto 100%;
+}
+    
+.social {
+    padding: 5em 2em 0em 1em;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+    
+ body {
+   background-image: url("../images/mobile.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height:600px;
+    background-size:auto 100%; }
+    
+h3 {
+    font-size: 1.5em;
+    padding: 2em 1em 1em 1em;
+}
+    
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 10% 15% 15% 15% 15% 15% 15%  10%;/*Make the grid smaller than the container*/
+    grid-gap: 0px;
+    padding: 0px;
+}
+
+.grid-download {
+    margin: 9em 0em 0em 0em;
+    }
+    
+.two-grid {
+    display: grid;
+    grid-template-columns: 100%;/*Make the grid smaller than the container*/
+    grid-gap: 30px;
+    padding-left:1em;
+    padding-right:1em;
+}
+    
+.buttons{
+    align-items: center;
+    margin:1em 5em;
+    display: block;
+    align-items: center;
+    }
+    
+section button {
+    margin: 2em 0em;
+    padding: 0.7em 6em;
+}
+    
+.two-grid img {
+    padding: 0em;
+    }
+    
+.banner{
+     background-image: url("../images/footer.png");
+    background-size:;
+      background-repeat: no-repeat;
+      width: 100%;
+     height: 100%;
+}
+    
+.gunpowder{
+    padding-top:3.75em;
+}
+
+.tanqueray {
+       padding-top:3.15em;
+}
+
+.malfy {
+padding-top:3.75em;
+}
+
+.bulldog{
+    padding-top:3.1em;
+}
+
+.hapenny {
+       padding-top:3em;
+}
+
+.copeland {
+padding-top:3.8em;
+}
+
+.hendricks{
+    padding-top:0.65em;
+}
+
+.bombay{
+       padding-top:0em;
+}
+
+.eg{
+padding-top:0.1em;
+}
+
+.jawbox {
+    padding-top:0.7em;
+}
+
+.hortus {
+       padding-top:0.8em;
+}
+
+.boodles {
+padding-top:0.65em;
+}
+    
+.arrow {
+    padding-left: 4em;
+    padding-top: 9em;
+}
+    
+.banner{
+    width: 500px;
+    height:350px;
+    background-size:auto 100%; }
+    
+.social {
+    padding: 5em 2em 0em 1em;
+    }
+
+}
+
+
+    
