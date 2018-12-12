@@ -1,4 +1,4 @@
 IXD302 ICONS
 ======================================
 
-- [Ginicons](https://github.com/elliethompson/ginicons/index.html)
+- [Ginicons](https://elliethompson.github.io/ginicons/index.html)
