@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+    <html lang="en">
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        
+<script>
+    
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+        
+<script type="text/javascript">
+    
+    $(window).on('scroll', function() {
+        if($(window).scrollTop()) {
+            $('nav').addClass('white');
+        }
+        else{
+            $('nav').removeClass('white');
+        }
+    })
+    
+    </script> 
+        
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content= "width=device-width, inital-scale=1">
+    
+        <title>Gin</title>
+        
+        <!----------- LINKING CSS FILE ------------->
+         <link href='css/style.css' type='text/css' rel='stylesheet'/>
+        
+        <!---------- LINKING GOOGLE FONTS ---------->
+        <link rel="stylesheet" href="https://use.typekit.net/hfa6wgx.css">
+        
+
+    <nav class="fill">
+        <ul>
+            <li>
+                <b><a href="#download">Download</a></b>
+            </li>
+            <li>
+                <b><a href="#howto">Ways to use</a></b>
+            </li>
+        </ul>
+    </nav>
+
+    
+</head>
+
+<article>
+   
+<body>
+    
+<div class="first-shelf">
+    <div class="grid-container">
+   <div></div>
+            <div class="gunpowder"><a href=""><img src="images/gun.png"></a></div>
+                <div class="tanqueray"><img src="images/tan.png"></div>
+                    <div class="malfy"><img src="images/malf.png"></div>  
+                <div class="bulldog"><img src="images/bull.png"></div>
+            <div class="hapenny"><img src="images/hap.png"></div>
+        <div class="copeland"><img src="images/cop.png"></div>  
+    </div>
+</div>
+
+<div class="second-shelf">
+    <div class="grid-container">
+   <div></div>
+      <div class="hendricks"><img src="images/hen.png"></div>
+      <div class="bombay"><img src="images/bs.png"></div>
+      <div class="eg"><img src="images/eg.png"></div>  
+      <div class="jawbox"><img src="images/jaw.png"></div>
+      <div class="hortus"><img src="images/hoc.png"></div>
+      <div class="boodles"><img src="images/boo.png"></div>   
+    </div>
+    
+   
+</div>
+    
+     <div class="arrow bounce">
+         <p><b>Download now!</b></p>
+  <a class="fa fa-arrow-down fa-2x" href="#download"><img src="images/arrow.svg" width="20px"></a>
+</div>
+    
+        <div class="grid-download"> 
+            <h1>Download</h1>
+                <p>Download your set today for free!</p>
+    </div>
+    <class id="download">
+<div class="download-grid">
+    <div class="buttons">
+        
+    <div class="box one">
+        <section>
+            <a href="ginicons-jpeg.zip">
+                <button id="js-trigger-overlay" type="button">
+                <p>JPEG</p>
+                </button>
+            </a>
+        </section>
+    </div>
+        
+    <div class="box two">
+        <section>
+            <a href="ginicons-svg.zip">
+                    <button id="js-trigger-overlay" type="button">
+                        <p>SVG</p>
+                    </button>
+            </a>
+       </section>
+    </div>
+        
+                
+    <div class="box three">
+        <section>
+                <a href="ginicons-png.zip">
+                    <button id="js-trigger-overlay" type="button">
+                        <p>PNG</p>
+                    </button>
+                </a>
+        </section>
+    </div>
+        </div>
+</div>
+   
+<div class="grid-howto">    
+    <class id="howto">
+        <h1>Ways to use</h1>
+             <p class="howtotext">You can use Ginicons whatever way you like, whether it is online or offline, you decide!  Feeling uninspired? Don't worry I've got a few suggestions.</p>
+    </class>
+</div>
+    
+<div class="two-grid">
+    <div>
+        <img src="images/gin-mock.png">
+            <h2>Websites & Applications</h2>
+                <p class="howtotext">Are you a bar, restaurant or offsales that wants to stand out? Why not use Ginicons to add a unique, creative flare to your menus, adverts, apps, websites and everything inbetween.</p>
+    </div>
+        
+    <div>
+        <img src="images/gin-pins.png">
+            <h2>Badges & stickers</h2>
+                <p class="howtotext">Just popping on here because you're a gin lover? I've got something for you too. Why not get creative with your love for gin and download the icon set to create pin badges or stickers.</p>
+    </div>
+
+</div>
+    
+<footer class="banner">
+    <div class="social">
+        <h3>I'd love to see what you make of Ginicons!</h3>
+            <p>Share your creations via <a href="https://www.instagram.com/_ellistrations/">Instagram</a> using <span>#ginicons</span></p>
+        <p>Icons & Website designed by <a href="http://www.elliethompson.co.uk/">Ellie Thompson</a> &copy; 2018</p>
+    </div>
+</footer>
+    
+    </class></body></article></html>
